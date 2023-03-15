@@ -1,3 +1,24 @@
 html {
+    background-color: #fffae0ff;
+}
 
+h1 {
+    color: #150c6d;
+    font-family: 'Roboto';
+    font-size: 40;
+}
+
+h2 {
+    color:  #279d9d;
+    font-family: 'Roboto';
+}
+
+body {
+    color: #000000;
+    font-family: 'Roboto';
+}
+
+p {
+    color: #296a5e;
+    font-family: 'Roboto';
 }
