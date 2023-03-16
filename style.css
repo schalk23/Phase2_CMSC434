@@ -50,7 +50,8 @@ body {
 .navbar {
   width: 100%;
   background-color: #86C8BC;
-  margin-top: 430px;
+  /* comment added by Sofia: this adds a large space at the bottom unncessarily */
+  /*margin-top: 430px; */
   overflow: auto;
   list-style-type: none;
   padding: 0;
@@ -135,19 +136,22 @@ body {
 #SOTD {
     background-color: black;
     border: 2px solid black;
-    margin: 7rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 7rem;
     position: relative;
     bottom: 6rem;
     text-align: center;
+
 }
 
 #More_Stretches1 {
     position: relative;
+    top: 3.5rem;
 }
 
 .grid-container {
     display: grid;
-    float: none;
     grid-template-columns: auto auto auto;
 
 }
@@ -155,3 +159,23 @@ body {
 .grid-item {
     text-align: center;
 }
+
+#swipeAbove {
+    text-align: center;
+    position: relative;
+    bottom: 4rem;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    bottom: 60rem;
+  }

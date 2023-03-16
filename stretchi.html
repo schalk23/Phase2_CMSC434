@@ -10,7 +10,6 @@
 
 </head>
 <body>
-    
 <div class="box">
 <h1 class="logo">FLEX</h1>    
 <h1 class="title">Stretch</h1>
@@ -19,19 +18,21 @@
 
 <h2> Stretches of the Day </h2>
 <div id="SOTD">
-    <img src="./stretch_images/SOTD1.png" height=100rem  width="auto">
+    <img src="./stretch_images/SOTD1.png" height=300px  width="auto">
 </div>
-Swipe Above
-
+<div id="swipeAbove">
+    <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+Click Next Dot For More  
+</div>
 <div class="grid-container">
     <div class="grid-item"></div>
     <div class="grid-item"> 
         <h2 id = "LegsText" > Legs </h2>
-        <img id="LegsPic"src="./stretch_images/leg.png"  height = 200px width="auto" >
+        <img id="LegsPic"src="./stretch_images/leg.png"  height = 195px width="auto" >
     </div>
     <div class="grid-item"></div>
     <div class="grid-item">
-        <img id="ArmsPic"src="./stretch_images/arm.png"  height = 200px width="auto" >
+        <img id="ArmsPic"src="./stretch_images/arm.png"  height = 195px width="auto" >
         <h2 id = "ArmsText" > Arms </h2>
     </div> 
     <div class="grid-item">
@@ -39,33 +40,36 @@ Swipe Above
         <h2 id="More_Stretches1"> Stretches </h2>
     </div>
     <div class="grid-item">
-        <img id="AbsPic" src="./stretch_images/abs.png" height = 200px width="auto">
+        <img id="AbsPic" src="./stretch_images/abs.png" height = 195px width="auto">
         <h2 id = "AbsText" > Abs </h2>
     </div>
     <div class="grid-item"></div>
     <div class="grid-item">
-        <img id="BackPic" src="./stretch_images/back.png"  height = 200px width="auto" >
+        <img id="BackPic" src="./stretch_images/back.png"  height = 195px width="auto" >
         <h2 id = "BackText" > Back </h2>
     </div>
     <div class="grid-item"></div>
 </div>
     
 <div class="navbar">
-  <a class="active" a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a> 
-  <a href="stretch.html"><i class="fa fa-odnoklassniki"></i> Stretch</a> 
+  <a  a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a> 
+  <a class="active" href="stretch.html"><i class="fa fa-odnoklassniki"></i> Stretch</a> 
   <a href="health.html"><i class="fa fa-heartbeat" aria-hidden="true"></i> Literacy</a>
   <a href="mood.html"><i class="fa fa-book"></i> Mood</a>
   <a href="intake.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Intake</a>
   <a href="profile.html"><i class="fa fa-fw fa-user"></i> Profile</a>
   <a href="survey.html"><i class="fa fa-sticky-note"></i> Survey</a>
     
-</div>
-
-    
+</div>   
 </div>
 <!-- <a href="https://www.flaticon.com/free-icons/leg" title="leg icons">Leg icons created by Good Ware - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/strenght" title="strenght icons">Strenght icons created by Good Ware - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Good Ware - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/muscle" title="muscle icons">Muscle icons created by Good Ware - Flaticon</a> -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 </body>
 </html>
