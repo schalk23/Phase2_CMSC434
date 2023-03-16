@@ -1,0 +1,68 @@
+.box{
+    align-self: center;
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: #FFFDBA;
+    margin-left: 400px;
+}
+
+.logo{
+    font-family: 'Rampart One', cursive;
+    font-size: 28px;
+
+}
+
+h1{
+    text-align:center;
+    margin:none;
+    padding: none;
+    color:#150c6d;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-size: 40px;
+
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #86C8BC;
+    overflow: hidden;
+    font-size:18px;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.nav_menu{
+    margin-top: 430px;
+}
+
+.home_icon{
+    background-color: url(Images/home_icon.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
