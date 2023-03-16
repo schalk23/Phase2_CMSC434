@@ -1,0 +1,30 @@
+html {
+
+    /* This is going to be the colors, font-size, and font for regular text */
+    background-color: #fffae0ff;
+    color: #296a5e;
+    font-family: 'Roboto';
+    font-size: 25;
+}
+
+/* Heading 1 specifications */
+h1 {
+    color: #150c6d;
+    font-family: 'Roboto';
+    font-size: 40;
+    text-align: center;
+}
+
+/* Heading 2 specifications */
+h2 {
+    color:  #279d9d;
+    font-family: 'Roboto';
+    font-size: 30;
+}
+
+/* Body text specifications */
+body {
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 25;
+}
