@@ -179,3 +179,32 @@ body {
     position: relative;
     bottom: 60rem;
   }
+
+  #arrowUp {
+    transform: rotate(270deg);
+    display: block;
+    position: relative;
+    left: 7.5rem;
+ 
+  }
+
+  #arrowDown {
+    transform: rotate(90deg);
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 7.5rem;
+  }
+
+  #arrowLeft {
+    transform: rotate(180deg);
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+  }
+
+  #arrowRight {
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+  }
