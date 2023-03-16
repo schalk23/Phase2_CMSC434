@@ -1,0 +1,157 @@
+.box{
+    align-self: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: #FFFDBA;
+
+}
+
+html {
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    font-family: 'Rampart One', cursive;
+    font-size: 28px;
+
+}
+
+h1{
+    text-align:center;
+    margin:none;
+    padding: none;
+    color:#150c6d;
+    font-size: 40;
+    text-align: center;
+}
+
+/* Heading 2 specifications */
+h2 {
+    color:  #279d9d;
+    font-family: 'Roboto';
+    font-size: 30;
+    text-align: center;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-size: 40px;
+
+}
+
+body {
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 25;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #86C8BC;
+  margin-top: 430px;
+  overflow: auto;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  font-size:18px;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.active {
+  background-color: #296a5e;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    display: block;
+    }   
+}
+
+#ArmsText {
+    position: relative;
+}
+
+#LegsText {
+    position: relative;
+    
+}
+
+#AbsText {
+    position: relative;
+    
+}
+
+#BackText {
+    position: relative;
+    
+}
+
+#ArmsPic {
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+#BackPic {
+    border: 2px solid black;
+    background-color: white;
+}
+
+#AbsPic {
+    border: 2px solid black;
+    background-color: white;
+}
+
+#LegsPic {
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+#SOTD {
+    background-color: black;
+    border: 2px solid black;
+    margin: 7rem;
+    position: relative;
+    bottom: 6rem;
+    text-align: center;
+}
+
+#More_Stretches1 {
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    float: none;
+    grid-template-columns: auto auto auto;
+
+}
+
+.grid-item {
+    text-align: center;
+}
