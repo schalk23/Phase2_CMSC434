@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="logo">FLEX</h1>
+      <h1 class="title">Stretch</h1>
+      <!-- Gonna have to insert some JS to interpolate this baby -->
+      <h2>Beginner Level</h2>
+
+      <h2>Stretches of the Day</h2>
+      <div id="SOTD">
+        <img src="./stretch_images/SOTD1.png" height="300px" width="auto" />
+      </div>
+      <div id="swipeAbove">
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        Click Next Dot For More
+      </div>
+      <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <h2 id="LegsText">Legs</h2>
+          <img
+            id="LegsPic"
+            src="./stretch_images/leg.png"
+            height="165px"
+            width="auto"
+          />
+          <img
+            id="arrowUp"
+            src="./stretch_images/right-arrow.png"
+            height="45px"
+            width="auto"
+          />
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <img
+            id="ArmsPic"
+            src="./stretch_images/arm.png"
+            height="165px"
+            width="auto"
+          />
+          <img
+            id="arrowLeft"
+            src="./stretch_images/right-arrow.png"
+            height="45px"
+            width="auto"
+          />
+          <h2 id="ArmsText">Arms</h2>
+        </div>
+        <div class="grid-item">
+          <h2 id="More_Stretches1">More</h2>
+          <h2 id="More_Stretches1">Stretches</h2>
+        </div>
+        <div class="grid-item">
+          <img
+            id="arrowRight"
+            src="./stretch_images/right-arrow.png"
+            height="45px"
+            width="auto"
+          />
+          <img
+            id="AbsPic"
+            src="./stretch_images/abs.png"
+            height="165px"
+            width="auto"
+          />
+          <h2 id="AbsText">Abs</h2>
+        </div>
+        <div class="grid-item"></div>
+        <div class="grid-item">
+          <img
+            id="arrowDown"
+            src="./stretch_images/right-arrow.png"
+            height="45px"
+            width="auto"
+          />
+          <img
+            id="BackPic"
+            src="./stretch_images/back.png"
+            height="165px"
+            width="auto"
+          />
+          <h2 id="BackText">Back</h2>
+        </div>
+        <div class="grid-item"></div>
+      </div>
+
+      <div class="navbar">
+        <a a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a class="active" href="stretch.html"
+          ><i class="fa fa-odnoklassniki"></i> Stretch</a
+        >
+        <a href="health.html"
+          ><i class="fa fa-heartbeat" aria-hidden="true"></i> Literacy</a
+        >
+        <a href="mood.html"><i class="fa fa-book"></i> Mood</a>
+        <a href="intake.html"
+          ><i class="fa fa-cutlery" aria-hidden="true"></i> Intake</a
+        >
+        <a href="profile.html"><i class="fa fa-fw fa-user"></i> Profile</a>
+        <a href="survey.html"><i class="fa fa-sticky-note"></i> Survey</a>
+      </div>
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <!-- <a href="https://www.flaticon.com/free-icons/leg" title="leg icons">Leg icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/strenght" title="strenght icons">Strenght icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/muscle" title="muscle icons">Muscle icons created by Good Ware - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Roundicons - Flaticon</a> -->
+  </body>
+</html>
