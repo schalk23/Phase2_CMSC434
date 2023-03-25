@@ -159,7 +159,7 @@ body {
 }
 
 /* + grid item on stretching home tab */
-.grid-item {
+.grid-itemA, .grid-itemB, .grid-itemC, .grid-itemD, .grid-itemE, .grid-itemF, .grid-itemG, .grid-itemH, .grid-itemI{
     text-align: center;
 }
 
