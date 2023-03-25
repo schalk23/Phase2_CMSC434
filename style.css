@@ -1,3 +1,4 @@
+/* Entirety of the yellow background for each tab */
 .box{
     align-self: center;
     width: 100%;
@@ -91,42 +92,43 @@ body {
     display: block;
     }   
 }
-
+/* 'Arms' text on stretching home tab */
 #ArmsText {
     position: relative;
 }
-
+/* 'Legs' text on stretching home tab */
 #LegsText {
     position: relative;
     
 }
-
+/* 'Abs' text on stretching home tab */
 #AbsText {
     position: relative;
     
 }
-
+/* 'Back' text on stretching home tab */
 #BackText {
     position: relative;
     
 }
-
+/* Clickable arms pic on stretching home tab */
 #ArmsPic {
     border: 4px solid #86C8BC;
     background-color: white;
 
 }
-
+/* Clickable back pic on stretching home tab */
 #BackPic {
     border: 4px solid  #86C8BC;
     background-color: white;
 }
-
+/* Clickable abs pic on stretching home tab */
 #AbsPic {
     border: 4px solid  #86C8BC;
     background-color: white;
 }
 
+/* Clickable legs pic on stretching home tab */
 #LegsPic {
     border: 4px solid  #86C8BC;
     background-color: white;
@@ -143,28 +145,32 @@ body {
 
 }
 
+/* text for more stretches text on stretching home tab */
 #More_Stretches1 {
     position: relative;
     top: 3.5rem;
 }
 
+/* entire grid item for stretching home tab */
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
 
 }
 
+/* + grid item on stretching home tab */
 .grid-item {
     text-align: center;
 }
 
+/* Text for swipe above on stretch home tab */
 #swipeAbove {
     text-align: center;
     position: relative;
     bottom: 3rem;
 }
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators below SOTD */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -178,6 +184,7 @@ body {
     bottom: 65rem;
   }
 
+    /* Up Arrow for Stretch tab home page */
   #arrowUp {
     transform: rotate(270deg);
     display: block;
@@ -185,7 +192,7 @@ body {
     left: 7.5rem;
  
   }
-
+  /* Down Arrow for Stretch tab home page */
   #arrowDown {
     transform: rotate(90deg);
     display: block;
@@ -194,6 +201,7 @@ body {
     left: 7.5rem;
   }
 
+   /* Left Arrow for Stretch tab home page */
   #arrowLeft {
     transform: rotate(180deg);
     text-align: center;
@@ -201,18 +209,21 @@ body {
     bottom: 3rem;
   }
 
+  /* Right Arrow for Stretch tab home page */
   #arrowRight {
     text-align: center;
     position: relative;
     bottom: 3rem;
   }
 
+  /* 5 tabs to select on home page */
   .grid-container1 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
 
 }
 
+/* Each tab itself on the home page */
 .grid-item1 {
     text-align: center;
     background-color: #86C8BC;
@@ -221,4 +232,14 @@ body {
     max-width: auto;
     max-height: 100%;
     font-size: 40px;
+}
+
+/* Quote of the day on the home page */
+p.quote {
+    text-align: center;
+}
+
+/* Streak formatting */
+#MonStreak, #TueStreak, #WedStreak, #ThrStreak, #FriStreak, #SatStreak, #SunStreak {
+    float: left;
 }
