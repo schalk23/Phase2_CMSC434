@@ -224,22 +224,45 @@ body {
 }
 
 /* Each tab itself on the home page */
-.grid-item1 {
-    text-align: center;
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5  {
     background-color: #86C8BC;
     border: 2px solid #279d9d;
     color: #FFFFFF;
     max-width: auto;
-    max-height: 100%;
+    height: 8rem;
     font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
 }
 
 /* Quote of the day on the home page */
 p.quote {
     text-align: center;
+    font-size: 20.4px;
 }
 
 /* Streak formatting */
 #MonStreak, #TueStreak, #WedStreak, #ThrStreak, #FriStreak, #SatStreak, #SunStreak {
-    float: left;
+    display: inline;
+}
+
+/* This will center align the div containing the streak on home page*/
+#streakControl {
+    text-align: center;
+}
+
+/* Grid for the Days of the week on the home page */
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+/* individual DOW grid items for M-Sun */
+.grid-item6 {
+    text-align: center;
+    max-width: 4px;
+    font-size: 10px;
+    position: relative;
+    left: 20px;
 }
