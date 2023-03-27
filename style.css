@@ -1,4 +1,4 @@
-.box{
+ .box{
     align-self: center;
     width: 100%;
     height: 1520px;
@@ -11,15 +11,28 @@
     font-family: 'Rampart One', cursive;
     font-size: 60px;
 }
-
-h1{
-    text-align:center;
-    margin:none;
-    padding: none;
-    color:#150c6d;
+/* This is going to be the colors, font-size, and font for regular text */
+html {
+    background-color: #fffae0ff;
+    color: #296a5e;
+    font-family: 'Roboto';
+    font-size: 25;
 }
 
-h2{
+/* Heading 1 specifications */
+h1 {
+    color: #150c6d;
+    font-family: 'Roboto';
+    font-size: 40;
+    text-align: center;
+    margin:none;
+    padding: none;
+}
+
+/* Heading 2 specifications */
+h2 {
+
+    font-family: 'Roboto';
     text-align:center;
     margin:none;
     padding: none;
@@ -41,8 +54,11 @@ button{
   text-align: center;
 }
 
+/* Body text specifications */
 p{
-    font-size: 30px;
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 25;
 }
 
 .button:hover {opacity: 1}
