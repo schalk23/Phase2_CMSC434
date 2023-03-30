@@ -1,0 +1,80 @@
+.box{
+    align-self: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: #FFFDBA;
+
+}
+body{
+    background-color: #FFFDBA;
+}
+
+meter{
+    margin-left: 20em;
+    margin-top: -5em;
+    width: 70em;
+    height: 10em;
+    transform: rotate(-90deg); 
+}
+meter::-webkit-meter-bar{
+    background: #eeeeee;
+    border-radius: 2px;
+}
+
+.nutrientlabel{
+    font-size: 4em;
+}
+.nutrientinput{
+    font-size: 2em;
+}
+
+.eat{
+    padding: 1em;
+    font-size: 2em;
+    margin: .5em 1em;
+}
+
+.nutrition{
+    
+    
+}
+.nutritiontitle{
+    font-size: 3em;
+    text-align: center;
+}
+.graphtitle{
+    font-size: 3em;
+    text-align: center;
+}
+.navbar {
+    width: 100%;
+    height: 10em;
+    position: absolute;
+    bottom: 0em;
+    background-color: #86C8BC;
+    
+}
+.radiobutton{
+    border: 0px;
+    width: 5em;
+    height: 2em;
+}
+.graphlabels{
+    font-size: 5em;
+}
+
+.logo{
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    font-size: 60px;
+
+}
+.icons{
+    width:20em;
+    height: 25em;
+    margin: 5em 65em;
+    padding: 0px;
+}
+
+  
