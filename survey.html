@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Welcome Survey  </title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +17,42 @@
     
 <div class="box">
 <h1 class="logo">FLEX</h1>    
-<h1 class="title">First Time User Survey</h1>
+<p  STYLE = " text-align: center;"> Let's get to know you better to tailor the app to your needs</p>
+<form>
+  <fieldset>
+  <legend STYLE = "color:#279d9d; text-align: center; ">First Time User Quiz</legend>
+  <h3> Basic Info </h3>
+   <p>
+       First name: <input type = "text" name = "fname" />
+</p>
+ <p>
+       Last name: <input type = "text" name = "lname" />
+</p>
+<p>
+  Age: <input type = "number" name = "age" />
+</p>
+
+<p>
+  <h3>Fitness Level </h3>
+  <input type = "radio" name = "Fitness Level" value = "Beginner"> Beginner
+  <input type = "radio" name = "Fitness Level" value = "Intermediate"> Intermediate
+  <input type = "radio" name = "Fitness Level" value = "Advanced"> Advanced
+  <br>
+ 
+<p>
+  <h3>Goals </h3>
+Daily Water Intake Goal:  <input type = "range" id = "water" min="8" max="16" /> <span id="waterOz"> </span>
+<p id="waterhelp" onMouseover="waterHelp()" STYLE = "font-size: x-small; font-style: italic;">help</p>
+
+Daily Caloric Goal: <input type = "range" id = "calories"  min="1200" step="100" max="4000"/> <span id="cals"> </span>
+
+ <p id="calshelp" onMouseover="calsHelp()" STYLE = "font-size: x-small; font-style: italic;">help</p>
+<p>
+    <input type = "submit" name = "submit" value = "Submit" />
+  </p>
+</fieldset>
+</form>
+
 
 <div class="navbar">
   <a class="active" a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a> 
@@ -30,4 +69,27 @@
 
 
 </body>
+<script>
+  function waterHelp(){
+      document.getElementById("waterhelp").innerHTML = "Recommended water daily water intake is 9 and 13 cups for women and men respectively"
+  }
+  function calsHelp(){
+      document.getElementById("calshelp").innerHTML = "Recommended caloric daily water intake range is 1200-2400 and 2000-3000 for women and men respectively"
+  }
+ 
+  var waterslider = document.getElementById("water");
+  var wateroutput = document.getElementById("waterOz");
+  waterslider.onchange = function() {
+    wateroutput.innerHTML = this.value + " oz";
+  }
+
+  var calsslider = document.getElementById("calories");
+  var calsoutput = document.getElementById("cals")
+  calsslider.onchange = function() {
+    calsoutput.innerHTML = this.value + " cals";
+  }
+
+
+</script>
 </html>
+
