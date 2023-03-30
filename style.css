@@ -15,14 +15,14 @@
 html {
     background-color: #fffae0ff;
     color: #296a5e;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-size: 25;
 }
 
 /* Heading 1 specifications */
 h1 {
     color: #150c6d;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-size: 40;
     text-align: center;
     margin:none;
@@ -53,17 +53,11 @@ button{
   align-content: center;
   text-align: center;
 }
-h3 {
-    color:  #279d9d;
-    font-family: 'Roboto', sans-serif;
-    font-size: 35;
-}
-
 
 /* Body text specifications */
 p{
     color: #000000;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-size: 25;
 }
 
@@ -114,88 +108,3 @@ p{
     margin: 5px 60px;
     padding: 0px;
 }
-
-.button:hover {opacity: 1}
-
-.title{
-    font-family: 'Roboto';
-    font-size: 70px;
-
-}
-
-.learning{
-    padding-left: 160px;
-}
-
-#physicalHealth, #mental, #healthcare, #lifestyle{
-    text-align: left;
-    padding: 30px 90px;
-    font-size:28px;
-}
-
-.navbar {
-  width: 960px;
-  position: absolute;
-  bottom: 10px;
-  background-color: #86C8BC;
-  overflow: auto;
-  list-style-type: none;
-  overflow: hidden;
-  font-size:18px;
-  margin-bottom: none;
-}
-
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  margin-top: 0px;
-  margin-bottom: 25px;
-}
-
-.icons{
-    width: 20px;
-    height: 25px;
-    margin: 5px 60px;
-    padding: 0px;
-}
-
-
-
-.slidecontainer {
-    width: 100%; /* Width of the outside container */
-  }
-
-  .slider {
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 15px; /* Specified height */
-    background: #150c6d; /* Grey background */
-    outline: none; /* Remove outline */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-  /* The slider handle*/
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
-    appearance: none;
-    width: 10px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
-    background: #279d9d; /* Green background */
-    cursor: pointer; /* Cursor on hover */
-  }
-
-  .hide {
-    display: none;
-  }
-      
-  .myDIV:hover + .hide {
-    display: block;
-    color: red;
-  }
-  
-  
