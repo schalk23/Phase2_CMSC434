@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <script>
+    let toggle = button => {
+        let element = document.getElementById("physicalHealth");
+        let hidden = element.getAttribute("hidden");
+        document.getElementById("mental").setAttribute("hidden", "hidden");
+        document.getElementById("lifestyle").setAttribute("hidden", "hidden");
+        document.getElementById("healthcare").setAttribute("hidden", "hidden");
+
+        if (hidden) {
+           element.removeAttribute("hidden");
+        } else {
+           element.setAttribute("hidden", "hidden");
+        }
+     }
+     
+    let toggleMental = button => {
+        let element = document.getElementById("mental");
+        let hidden = element.getAttribute("hidden");
+        document.getElementById("physicalHealth").setAttribute("hidden", "hidden");
+        document.getElementById("lifestyle").setAttribute("hidden", "hidden");
+        document.getElementById("healthcare").setAttribute("hidden", "hidden");
+
+        if (hidden) {
+           element.removeAttribute("hidden");
+        } else {
+           element.setAttribute("hidden", "hidden");
+        }
+     }
+    
+      let toggleLife = button => {
+        let element = document.getElementById("lifestyle");
+        let hidden = element.getAttribute("hidden");
+        document.getElementById("physicalHealth").setAttribute("hidden", "hidden");
+        document.getElementById("mental").setAttribute("hidden", "hidden");
+        document.getElementById("healthcare").setAttribute("hidden", "hidden");
+
+        if (hidden) {
+           element.removeAttribute("hidden");
+        } else {
+           element.setAttribute("hidden", "hidden");
+        }
+     }
+      
+      let toggleHealth = button => {
+        let element = document.getElementById("healthcare");
+        let hidden = element.getAttribute("hidden");
+        document.getElementById("physicalHealth").setAttribute("hidden", "hidden");
+        document.getElementById("mental").setAttribute("hidden", "hidden");
+        document.getElementById("lifestyle").setAttribute("hidden", "hidden");
+
+        if (hidden) {
+           element.removeAttribute("hidden");
+        } else {
+           element.setAttribute("hidden", "hidden");
+        }
+     }
+    </script>
+</head>
+<body>
+    
+<div class="box">
+    <h1 class="logo">FLEX</h1>    
+    <h1 class="title">Build Your Health</h1>
+    <h2>Level: Beginner</h2>
+    
+    <div class="learning">  
+        <p style="font-size: 22px;">Click a button to learn! Press the up and down arrow on your keyboard to scroll.</p>
+        <button onclick="toggleHealth(this)">Healthcare System</button>
+        <button onclick="toggleLife(this)">Healthy Lifestyle</button>
+        <button onclick="toggle(this)" style="padding-right:90px;">Physical Health</button>
+        <button onclick="toggleMental(this)" style="padding-right:70px;">Mental Health</button>
+    </div>
+    
+    <div id="healthcare" hidden>
+        <h2>What makes a good healthcare system?</h2>
+        The World Health Organization (WHO) lists the qualities of a good healthcare system as: <br/><br/>
+
+        <b>Safe and effective: </b>The care that is delivered takes into account individuals’ unique needs, preferences, and values.
+        <br/>
+        <b>Timely: </b>Wait times have been minimized to avoid potentially harmful delays in care. <br/>
+        <b>Equitable: </b>All residents and citizens are able to access the care <br/>
+        <b>Integrated: </b>The full range of healthcare services are available throughout a person’s life.<br/>
+        <b>Efficient:</b> Benefits have been maximized and waste has been minimized.<br/>
+        
+            
+        The four basic designs healthcare systems follow are:
+        <ol>
+        <li>Beveridge model </li>
+        <li>Bismarck model</li>
+        <li>National health insurance model </li>
+        <li>Uninsured model </li>
+        </ol>
+
+        All these models differ in both how they are funded and how healthcare is delivered. Publicly funded systems are paid for with taxation, while privately funded systems are paid for with individual contributions to a collective fund, like an insurance company. Facilities that deliver healthcare can be either owned by the government or privately owned by an organization, like a corporation or a nonprofit.<br/>
+
+        In the Beveridge model, funding and delivery is primarily provided by the government, whereas both are provided privately in the Bismarck model. In the national health insurance model, funding is public but facilities are private. And in the uninsured model, only those who are able to pay out of pocket receive care.<br/>
+
+        In all of the models, there is a role for private insurance, private healthcare practices, or both. Regardless of the model a country follows, though, universal coverage lays the foundation for effective price control and improves access to low-cost, high-benefit preventive care. In the U.S., where universal coverage is not ensured, up to half of uninsured patients have delayed preventive care because of cost.
+    </div>
+    
+    <div id="lifestyle" hidden>
+        <h2>What are Healthy Lifestyles:</h2>
+        A healthy lifestyle involves a combination of good physical, mental and social well-being. Being in good health encompasses so much more than what we often take it to mean; free from illnesses and diseases... <br/>
+
+        To keep healthy, here are some things you can do: <br/><br/>
+
+        <ul>
+            <li> Exercise regularly </li>
+            <li> Eat a balanced diet </li>
+            <li> Have a happy and positive attitude </li>
+            <li> Have a good sleep schedule</li>
+        </ul>
+        
+        <h2>What are the Elements of a Healthy Lifestyle?</h2>
+         <ol>
+        <li> A balanced diet. Nutrition has a big impact on our bodies, and well-being. All foods should be part of a balanced diet, and everyone has different likes and dislikes. When you lead a balanced diet, you'll still be able to eat all of your favourite foods. Foods that make up a balanced diet include; carbohydrates like rice and pasta that helps to give us energy, proteins which are important because they help us to build our muscles. Protein is also found in our hair and nails.</li>
+        <li> Being active. Being active doesn’t just have to be about being the most athletic person you can be, it can be doing things within your comfort zone that help you to keep your body moving. Exercise helps us to strengthen our muscles and improve our blood flow, which helps our body to stay healthy. Lots of people think exercise can be boring! But simply put, exercise is moving and being active... Which means that you may be doing exercise without even realising it, like taking a walk with friends.</li>
+        <li>Maintaining a regular sleeping pattern. Sleep is one of the most important things that we do for our bodies. It is recommended that adults sleep for eight hours every night.</li>
+        <li>Keeping stress to a minimum. Stress can get in the way of our health as well as our life goals. When we feel overly stressed, it can affect the other elements of health that are important. For example, when we feel stressed we may lose our appetite. It can also affect our sleep and make us feel sluggish, which can lead to us being less active. Everyone will find that they are able to manage their stress in different ways. Finding the way that works for you is really important for maintaining a healthy lifestyle.</li>
+         </ol>
+
+        All these models differ in both how they are funded and how healthcare is delivered. Publicly funded systems are paid for with taxation, while privately funded systems are paid for with individual contributions to a collective fund, like an insurance company. Facilities that deliver healthcare can be either owned by the government or privately owned by an organization, like a corporation or a nonprofit.<br/>
+
+        In the Beveridge model, funding and delivery is primarily provided by the government, whereas both are provided privately in the Bismarck model. In the national health insurance model, funding is public but facilities are private. And in the uninsured model, only those who are able to pay out of pocket receive care.<br/>
+
+        In all of the models, there is a role for private insurance, private healthcare practices, or both. Regardless of the model a country follows, though, universal coverage lays the foundation for effective price control and improves access to low-cost, high-benefit preventive care. In the U.S., where universal coverage is not ensured, up to half of uninsured patients have delayed preventive care because of cost.
+    </div>
+    <div id="physicalHealth" hidden>
+       <h2>Physical Health</h2>
+       The body is designed to move. Lack of exercise decreases range of motion within the body's joints causing pain and dysfunction. It also contributes to a decline in physical, mental and physiological health. On the flip side, too much exercise and stress can have an adverse effet, making the body susceptible to burnout and a compromised immune system. The body functions best with moderate amounts of work, stress and activity, coupled with rest to allow the body to repair and build stronger.
+    </div>
+     <div id="mental" hidden>
+         <h2>Mental Health and Well Being</h2>
+         <b>Positive mental health allows people to:</b>
+         <ol>
+            <li> Realize their full potential</li>
+            <li> Cope with the stresses of life </li>
+            <li> Work productively </li>
+            <li> Make meaningful contributions to their communities</li>
+            <li>Ways to maintain positive mental health include: </li>
+         </ol>
+
+         
+        <b> Getting professional help if you need it </b>
+        <ol>
+            <li> Staying positive</li>
+            <li> Getting physically active</li>
+            <li> Helping others </li>
+            <li> Getting enough sleep</li>
+            <li> Developing coping skills</li>
+        </ol>
+         
+    </div>
+    
+
+    <div class="navbar">
+        <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
+        <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
+        <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
+        <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
+        <a class="icons" href="intake.html"><img src="Images/calories_icon.png"></a>
+        <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a>
+    </div>  
+</div>
+
+
+</body>
+</html>
