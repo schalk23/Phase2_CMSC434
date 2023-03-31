@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css"/>
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>
-        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
         
     </head>
 
     <body>
-        <div >
+
+        <div class="box">
+            <h1 class="logo">FLEX</h1>
+                <div class = "nutrition">
+                    
+                    <h1 class = "nutritiontitle">Nutrition</h1>
+                    
+                </div>
+                <div>
+                    <button class = "open-button" type="button" onclick="openForm()">breakfast</button>
+                    <button class = "open-button" type="button" onclick="openForm()">lunch</button>
+                    <button class = "open-button" type="button" onclick="openForm()">dinner</button>
+                </div>
+                <div class = "form-popup" id = "form">
+                    <form action = "/action_page.php" class = "form-container">
+                        <label class = "nutrientlabel">Calories</label>
+                        <input class = "nutrientinput" type="number" id="calories" size="100"><br><br>
+                        <label class = "nutrientlabel">Calories</label>
+                        <input class = "nutrientinput" type="number" id="calories" size="100"><br><br>
+                        <button class = "open-button" type = "button" onclick="closeForm()">submit</button>
+                    </form>
+                </div>
+                <!-- water meter. <meter min = '0' low = '20' high = '50' max = '100' optimum='60' value='0'></meter> -->
+                    
+            
+                <div class="navbar">
+                  <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
+                  <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
+                  <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
+                  <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
+                  <a class="icons" href="intake.html"><img src="Images/calories_icon.png"></a>
+                  <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a>
+                </div>
+                
+        </div>
+        <!-- <div >
             <div class="box">
                 <h1 class="logo">FLEX</h1>    
             </div>
@@ -17,34 +53,26 @@
                 <div>
                     <h1 class = "nutritiontitle">Nutrition</h1>
                 </div>
-                <div>
-                    <button class = "eat" type="button">breakfast</button>
-                    <button class = "eat" type="button">lunch</button>
-                    <button class = "eat" type="button">dinner</button>
-                </div>
-                <div>
+            </div>
+            <div>
+                <button class = "open-button" type="button" onclick="openForm()">breakfast</button>
+                <button class = "open-button" type="button" onclick="openForm()">lunch</button>
+                <button class = "open-button" type="button" onclick="openForm()">dinner</button>
+            </div>
+            <div class = "form-popup" id = "form">
+                <form action = "/action_page.php" class = "form-container">
                     <label class = "nutrientlabel">Calories</label>
                     <input class = "nutrientinput" type="number" id="calories" size="100"><br><br>
                     <label class = "nutrientlabel">Calories</label>
-                    <input class = "nutrientinput" type="number" id="calories"><br><br>
-                    <label class = "nutrientlabel">Calories</label>
-                    <input class = "nutrientinput" type="number" id="calories"><br><br>
-                    <label class = "nutrientlabel">Calories</label>
-                    <input class = "nutrientinput" type="number" id="calories"><br><br>
-                </div>
-                <meter min = '0' low = '20' high = '50' max = '100' optimum='60' value='40'></meter>
-
+                    <input class = "nutrientinput" type="number" id="calories" size="100"><br><br>
+                    <button class = "submit" type = "button" onclick="closeForm()">submit</button>
+                </form>
             </div>
+            
+            <meter min = '0' low = '20' high = '50' max = '100' optimum='60' value='40'></meter>
         
-            <div class="navbar">
-              <!-- <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
-              <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
-              <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
-              <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
-              <a class="icons" href="intake.html"><img src="Images/calories_icon.png"></a>
-              <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a> -->
-            </div>
         
-        </div>
+        </div> -->
+        <script src = "nutritionScript.js"></script>
     </body>
 </html>
