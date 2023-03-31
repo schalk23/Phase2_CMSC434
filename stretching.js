@@ -1,7 +1,6 @@
-// When the back image is clicked on, it goes to the appropriate stretches page
-let SOTD = [];
-let 
+let SOTD = ['SOTD1.jpg', ];
 
+// When the back image is clicked on, it goes to the appropriate stretches page
 function clickBack() {
         if(document.getElementById("level").innerHTML === "Beginner") {
             location.href = 'beginnerBack.html';
