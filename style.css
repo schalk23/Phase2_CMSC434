@@ -1,22 +1,22 @@
-/* Entirety of the yellow background for each tab */
-.box{
+ .box{
     align-self: center;
     width: 100%;
-    height: auto;
+    height: 1520px;
     border: 1px solid black;
-    background-color: #FFFDBA;
-
-}
-
-html {
-    width: 100%;
-    height: auto;
+    background-color: #FFFDBA; 
+    overflow-y:auto;
 }
 
 .logo{
     font-family: 'Rampart One', cursive;
-    font-size: 28px;
-
+    font-size: 60px;
+}
+/* This is going to be the colors, font-size, and font for regular text */
+html {
+    background-color: #fffae0ff;
+    color: #296a5e;
+    font-family: 'Roboto';
+    font-size: 25;
 }
 
 h1{
@@ -26,72 +26,41 @@ h1{
     color:#150c6d;
     font-size: 40px;
     text-align: center;
+    margin:none;
+    padding: none;
 }
 
 /* Heading 2 specifications */
 h2 {
-    color:  #279d9d;
+
     font-family: 'Roboto';
-    font-size: 30px;
-    text-align: center;
+    text-align:center;
+    margin:none;
+    padding: none;
+    color:#150c6d;
+    font-size: 38px;
 }
 
-.title{
-    font-family: 'Roboto';
-    font-size: 40px;
-
+button{
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 32px 38px;
+  text-align: center;
+  font-size: 32px;
+  margin: 10px 10px;
+  opacity: 0.6;
+  transition: 0.3s;
+  align-content: center;
+  text-align: center;
 }
 
-body {
+p{
     color: #000000;
     font-family: 'Roboto';
     font-size: 25px;
 }
 
-.navbar {
-  width: 100%;
-  background-color: #86C8BC;
-  /* comment added by Sofia: this adds a large space at the bottom unncessarily */
-  /*margin-top: 430px; */
-  overflow: auto;
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  font-size:18px;
-}
-
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 2px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.navbar a:hover {
-  background-color: #000;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.active {
-  background-color: #296a5e;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 5px;
-}
-
-
-
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    display: block;
-    }   
-}
 /* 'Arms' text on stretching home tab */
 #ArmsText {
     position: relative;
@@ -274,5 +243,53 @@ div#quote {
 /* Formatting for the level on the home/stretching page */
 #level {
     font-style: italic;
+}
+
+.button:hover {opacity: 1}
+
+.title{
+    font-family: 'Roboto';
+    font-size: 70px;
+
+}
+
+.learning{
+    padding-left: 160px;
+}
+
+#physicalHealth, #mental, #healthcare, #lifestyle{
+    text-align: left;
+    padding: 30px 90px;
+    font-size:28px;
+}
+
+.navbar {
+  width: 960px;
+  position: absolute;
+  bottom: 10px;
+  background-color: #86C8BC;
+  overflow: auto;
+  list-style-type: none;
+  overflow: hidden;
+  font-size:18px;
+  margin-bottom: none;
+}
+
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.icons{
+    width: 20px;
+    height: 25px;
+    margin: 5px 60px;
+    padding: 0px;
 }
 
