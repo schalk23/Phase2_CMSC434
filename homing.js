@@ -1,9 +1,8 @@
 window.onload = main;
-
+let DayOfWeek = 'Monday';
 //global objects
 // let DayOfWeekArr = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 function main() {
-    let DayOfWeek = 'Monday';
     let quotesOfDay = ['When we do the best we can, we never know what miracle is wrought in our life or the life of another. – Helen Keller',
     'When it is obvious that goals can’t be reached, don’t adjust the goals, but adjust the action steps. – Confucius',
     'The whole secret of a successful life is to find out what is one’s destiny to do, and then do it. – Henry Ford',

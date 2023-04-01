@@ -2,20 +2,11 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <script type='text/javascript' > 
+      let DayOfWeek = 'Monday';
+    </script>
     <script type="text/javascript" src="stretching.js"></script>
   </head>
   <body>
@@ -26,17 +17,15 @@
       <h2 id="level">Advanced</h2>
 
       <h2>Stretches of the Day</h2>
-      <div id="SOTD">
-        <img src="./stretch_images/SOTD2.jpg" height="300px" width="auto" />
-      </div>
+      <img id="SOTD" src="./stretch_images/clickAny.png" height="300px" width="auto" />
       <div id="swipeAbove">
         <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-        Click Next Dot For More
+        Click Dots for Stretches of the Day
       </div>
       <div class="grid-container">
         <div class="grid-itemA"></div>
         <div class="grid-itemB" onclick="clickLegs()">
-          <h2 id="LegsText">Legs</h2>
+          <p id="LegsText">Legs</p>
           <img
             id="LegsPic"
             src="./stretch_images/leg.png"
@@ -64,7 +53,7 @@
             height="45px"
             width="auto"
           />
-          <h2 id="ArmsText">Arms</h2>
+          <p id="ArmsText">Arms</p>
         </div>
         <div class="grid-itemE">
           <h2 id="More_Stretches1">More</h2>
@@ -83,7 +72,7 @@
             height="165px"
             width="auto"
           />
-          <h2 id="AbsText">Abs</h2>
+          <p id="AbsText">Abs</p>
         </div>
         <div class="grid-itemG"></div>
         <div class="grid-itemH" onclick="clickBack()">
@@ -99,10 +88,11 @@
             height="165px"
             width="auto"
           />
-          <h2 id="BackText">Back</h2>
+          <p id="BackText">Back</p>
         </div>
         <div class="grid-itemI"></div>
       </div>
+      <br><br>
 
       <div class="navbar">
         <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
@@ -111,7 +101,6 @@
         <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
         <a class="icons" href="intake.html"><img src="Images/calories_icon.png"></a>
         <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a>
-  
       </div>
       <div style="text-align: center">
         <span class="dot" onclick="currentSlide(1)"></span>
