@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +12,37 @@
 <div class="box">
 <h1 class="logo">FLEX</h1>    
 <h1 class="title">Personal Mood Tracker</h1>
+<h2 STYLE="text-align: center"> Nightly mood check in.<br> How did you feel today?</h2>
+<img  id="moodchart" align="top" STYLE ="margin-left:170px" src="mood_tab.png" width="600" height="600" usemap = "#emotions">
+    <map name = "emotions">
+        <area onClick="happy()" class = "happy" shape = "rect " coords = "160,80, 240, 150"
+           href = "#mood"  />
+           <area onClick="sad()"  class = "sad" shape = "rect " coords = "300,100, 400, 200"
+           href = "#mood"  />
+           <area onClick="nuetral()" class = "nuetral" shape = "rect " coords = "380,200, 480, 300"
+           href = "#mood"  />
+           <area  onClick="anxious()" class = "anxious" shape = "rect " coords = "380,300, 480, 400"
+           href = "#mood"  />
+           <area onClick="stressed()" class = "stressed" shape = "rect " coords = "320,400, 420, 500"
+           href = "#mood"  />
+           <area onClick="relaxed()" class = "relaxed" shape = "rect " coords = "170,400, 270, 500"
+           href = "#mood"  />
+           <area  onClick="angry()" class = "angry" shape = "rect " coords = "100,275, 180, 375"
+           href = "#mood"  />
+           <area onClick="tired()" class = "tired" shape = "rect " coords = "100,200, 180, 300"
+           href = "#mood"  />
+     </map>
+    <br> <h4 id = "mood" STYLE="text-align: center" ></h4> 
+    
+    <h4 STYLE="text-align: center"> How strongly did you feel this from 1 - 10</h4>
+    <div class="slidecontainer">
+      <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+    </div>
+    <!--<p> 1 &nbsp &nbsp &nbsp &nbsp 2 &nbsp &nbsp &nbsp &nbsp 3 &nbsp &nbsp
+         &nbsp &nbsp 4&nbsp &nbsp &nbsp &nbsp 5 &nbsp &nbsp &nbsp &nbsp 6 
+         &nbsp&nbsp &nbsp &nbsp 7&nbsp &nbsp &nbsp &nbsp &nbsp 8 &nbsp 
+         &nbsp &nbsp &nbsp 9 &nbsp &nbsp &nbsp 10 </p> -->
+    <h4 id = "intensity" STYLE="text-align: center"> </h4>
   <div class="navbar">
       <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
       <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
@@ -24,4 +56,39 @@
 
 
 </body>
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("intensity");
+  slider.onchange = function() {
+    output.innerHTML = "Mood intensity: " + this.value;
+  }
+
+  function happy() {
+      document.getElementById('mood').innerHTML="Today you felt happy";  
+      return false;
+  }
+  function sad() {
+      document.getElementById('mood').innerHTML="Today you felt sad.";  
+  }
+  function stressed() {
+      document.getElementById('mood').innerHTML="Today you felt stressed.";  
+  }
+  function anxious() {
+      document.getElementById('mood').innerHTML="Today you felt anxious. ";  
+  }
+  function nuetral() {
+      document.getElementById('mood').innerHTML="Today you felt nuetral.";  
+  }
+  function relaxed() {
+      document.getElementById('mood').innerHTML="Today you felt relaxed";  
+  }
+  function angry() {
+      document.getElementById('mood').innerHTML=" Today you felt angry.";  
+  }
+  function tired() {
+      document.getElementById('mood').innerHTML=" Today you felt tired.";  
+  }
+
+</script>
 </html>
+
