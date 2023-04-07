@@ -1,4 +1,5 @@
-// When the back image is clicked on, it goes to the appropriate stretches page
+let stretchesArr = ["BAR1", "BAR2", "BA1", "BA2", "BA3", "BB1", "BB" ]// When the back image is clicked on, it goes to the appropriate stretches page
+
 function clickBack() {
         if(document.getElementById("level").innerHTML === "Beginner") {
             location.href = 'beginnerBack.html';
@@ -66,4 +67,47 @@ function currentSlide(dotNum) {
        document.getElementById("SOTD").src = SOTD3;
 
     }
+}
+
+// When the user submits their stretches, they see the format of the button change
+function submittedStretches() {
+    document.getElementById("buttonS").innerHTML = "<h2 style=\"background-color:#fffae0ff; color:black;\"> Stretches Submitted! </h2>";
+    document.getElementById("buttonS").style["background-color"] = "#fffae0ff";
+    document.getElementById("BA1").checked = false;
+    document.getElementById("BA2").checked = false;
+    document.getElementById("BA3").checked = false;
+    document.getElementById("IA1").checked = false;
+    document.getElementById("IA2").checked = false;
+    document.getElementById("IA3").checked = false;
+    document.getElementById("AA1").checked = false;
+    document.getElementById("AA2").checked = false;
+    document.getElementById("AA3").checked = false;
+    document.getElementById("BB1").checked = false;
+    document.getElementById("BB2").checked = false;
+    document.getElementById("BB3").checked = false;
+    document.getElementById("IB1").checked = false;
+    document.getElementById("IB2").checked = false;
+    document.getElementById("IB3").checked = false;
+    document.getElementById("AB1").checked = false;
+    document.getElementById("AB2").checked = false;
+    document.getElementById("AB3").checked = false;
+    document.getElementById("BAR1").checked = false;
+    document.getElementById("BAR2").checked = false;
+    document.getElementById("BAR3").checked = false;
+    document.getElementById("IAR1").checked = false;
+    document.getElementById("IAR2").checked = false;
+    document.getElementById("IAR3").checked = false;
+    document.getElementById("AAR1").checked = false;
+    document.getElementById("AAR2").checked = false;
+    document.getElementById("AAR3").checked = false;
+    document.getElementById("BL1").checked = false;
+    document.getElementById("BL2").checked = false;
+    document.getElementById("BL3").checked = false;
+    document.getElementById("IL1").checked = false;
+    document.getElementById("IL2").checked = false;
+    document.getElementById("IL3").checked = false;
+    document.getElementById("AL1").checked = false;
+    document.getElementById("AL2").checked = false;
+    document.getElementById("AL3").checked = false;
+
 }
