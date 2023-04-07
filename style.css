@@ -26,6 +26,13 @@ h1 {
     padding: none;
 }
 
+/* .inputdisplay .nutrientlabel{
+    display: inline-block;
+}
+.inputdisplay .nutrientinput{
+    display: inline-block;
+} */
+
 meter{
     margin-left: 2em;
     margin-top: 30em;
@@ -58,11 +65,13 @@ meter::-webkit-meter-bar {
 
 .nutrientlabel{
     font-size: 3em;
+    display: inline-block;
 }
 .nutrientinput{
     font-size: 2em;
     width: 3em;
     direction: rtl;
+    display: inline-block;
 }
 
 .eat{
@@ -148,7 +157,7 @@ meter::-webkit-meter-bar {
     width: 8em;
 }
 .open-button2{
-    background-color: #FFFDBA;
+    background-color: #719fd1;
     color: #150c6d;
     padding: .5em;
     font-size: 2em;
@@ -158,9 +167,6 @@ meter::-webkit-meter-bar {
     opacity: 0.8;
     width: 8em;
 }
-.nutrientlabel#bf{
-    text-align: center;
-    margin-left: 6.5em;
-}
+
 
   
