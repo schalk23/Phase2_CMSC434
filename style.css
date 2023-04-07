@@ -16,7 +16,7 @@ html {
     background-color: #fffae0ff;
     color: #296a5e;
     font-family: 'Roboto';
-    font-size: 25;
+    font-size: 25px;
 }
 
 h1{
@@ -64,6 +64,7 @@ p{
 /* 'Arms' text on stretching home tab */
 #ArmsText {
     position: relative;
+    right: 15px;
 }
 /* 'Legs' text on stretching home tab */
 #LegsText {
@@ -73,6 +74,7 @@ p{
 /* 'Abs' text on stretching home tab */
 #AbsText {
     position: relative;
+    left: 20px;
     
 }
 /* 'Back' text on stretching home tab */
@@ -118,7 +120,7 @@ p{
 /* text for more stretches text on stretching home tab */
 #More_Stretches1 {
     position: relative;
-    top: 3.5rem;
+    top: 2rem;
 }
 
 /* entire grid item for stretching home tab */
@@ -131,6 +133,7 @@ p{
 /* + grid item on stretching home tab */
 .grid-itemA, .grid-itemB, .grid-itemC, .grid-itemD, .grid-itemE, .grid-itemF, .grid-itemG, .grid-itemH, .grid-itemI{
     text-align: center;
+    
 }
 
 /* Text for swipe above on stretch home tab */
@@ -138,6 +141,7 @@ p{
     text-align: center;
     position: relative;
     bottom: 3rem;
+    font-size: 25px;
 }
 
 /* The dots/bullets/indicators below SOTD */
@@ -151,7 +155,7 @@ p{
     display: inline-block;
     transition: background-color 0.6s ease;
     position: relative;
-    bottom: 62rem;
+    bottom: 52rem;
   }
 
     /* Up Arrow for Stretch tab home page */
@@ -159,7 +163,7 @@ p{
     transform: rotate(270deg);
     display: block;
     position: relative;
-    left: 7.5rem;
+    left: 5rem;
  
   }
   /* Down Arrow for Stretch tab home page */
@@ -168,7 +172,7 @@ p{
     display: block;
     text-align: center;
     position: relative;
-    left: 7.5rem;
+    left: 5rem;
   }
 
    /* Left Arrow for Stretch tab home page */
@@ -197,7 +201,7 @@ p{
 .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5  {
     background-color: #86C8BC;
     border: 2px solid #279d9d;
-    color: #FFFFFF;
+    color: #000000;
     max-width: auto;
     height: 7rem;
     font-size: 40px;
@@ -216,6 +220,7 @@ div#quote {
 /* alignment for home tab click text above tabs */
 #clicktabs {
     text-align: center;
+    font-size: 14px;
 }
 
 /* Streak formatting */
@@ -293,5 +298,25 @@ div#quote {
     height: 25px;
     margin: 5px 60px;
     padding: 0px;
+}
+
+/* Button to click to get to the survey for first time users */
+#firstTimeB {
+    position: relative;
+    left: 10rem;
+}
+
+#numberOf {
+    display: inline;
+    position: relative;
+    left: 300px;
+    font-weight: bold;
+    color:#f4511e
+}
+
+#next {
+    display: inline;
+    position: relative;
+    left: 360px;
 }
 
