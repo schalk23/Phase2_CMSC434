@@ -27,16 +27,34 @@ h1 {
 }
 
 meter{
-    margin-left: 22em;
-    margin-top: 28em;
-    width: 70em;
-    height: 10em;
-    transform: rotate(-90deg); 
+    margin-left: 2em;
+    margin-top: 30em;
+    width: 55em;
+    height: 20em;
+    
 }
-meter::-webkit-meter-bar{
-    background: #eeeeee;
-    border-radius: 2px;
-}
+meter::-webkit-meter-bar {
+    background: none; /* Required to get rid of the default background property */
+    background-color: whiteSmoke;
+    box-shadow: 0 5px 5px -5px #333 inset;
+  }
+  
+  meter::-webkit-meter-optimum-value {
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background-image: linear-gradient(
+      90deg, 
+      #719fd1 5%, 
+      #719fd1 5%,
+      #719fd1 15%,
+      #719fd1 15%,
+      #719fd1 55%,
+      #719fd1 55%,
+      #719fd1 95%,
+      #719fd1 95%,
+      #719fd1 100%
+    );
+    background-size: 100% 100%;
+  }
 
 .nutrientlabel{
     font-size: 3em;

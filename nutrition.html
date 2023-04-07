@@ -18,12 +18,12 @@
                     
                 </div>
                 <div >
-                    <button class = "open-button" type="button" onclick="openForm();clicktrue();">breakfast</button>
-                    <button class = "open-button" type="button" onclick="openForm();clicktrue();">lunch</button>
-                    <button class = "open-button" type="button" onclick="openForm();clicktrue();">dinner</button>
+                    <a href="breakfast.html"><button class = "open-button" type="button">breakfast</button></a>
+                    <a href="lunch.html"><button class = "open-button" type="button">lunch</button></a>
+                    <a href="dinner.html"><button class = "open-button" type="button">dinner</button></a>
                 </div>
-                <div class = "form-popup" id = "form">
-                    <form action = "/action_page.php" class = "form-container">
+                <!-- <div class = "form-popup" id = "form"> -->
+                    <!-- <form action = "/action_page.php" class = "form-container">
 
                         <label class = "nutrientlabel" id = "bf">Breakfast</label><br>
 
@@ -61,9 +61,20 @@
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br><br>
 
                         <button class = "open-button2" type = "button" onclick="closeForm();reset();">submit</button>
-                    </form>
-                </div>
-                <!-- water meter. <meter min = '0' low = '20' high = '50' max = '100' optimum='60' value='0'></meter> -->
+                    </form> -->
+                <!-- </div> -->
+                <label class = "nutrientlabel" id = "TN">Total Nutrition</label><br>
+
+                    <label class = "nutrientlabel" id = "calorylabel">Calories: &nbsp</label><br>
+                    
+                    <label class = "nutrientlabel" id = "totalfatlabel">Total Fat: </label><br>
+                    
+                    <label class = "nutrientlabel">Total Carbohydrates: </label><br>
+                    
+                    <label class = "nutrientlabel">protein:</label><br>
+                    
+            
+                <meter min = '0' low = '0' high = '0' max = '100' value='20'></meter>
                     
             
                 <div class="navbar">
@@ -71,7 +82,7 @@
                   <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
                   <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
                   <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
-                  <a class="icons" href="intake.html"><img src="Images/calories_icon.png"></a>
+                  <a class="icons" href="nutrition.html"><img src="Images/calories_icon.png"></a>
                   <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a>
                 </div>
                 
