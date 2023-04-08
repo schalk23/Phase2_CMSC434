@@ -1,3 +1,5 @@
+
+
 .box{
     align-self: center;
     width: 100%;
@@ -35,7 +37,9 @@ h1 {
 
 meter{
     margin-left: 2em;
-    margin-top: 30em;
+    /* position: fixed;
+    bottom: 50px;
+    left: 20px; */
     width: 55em;
     height: 20em;
     
@@ -66,12 +70,42 @@ meter::-webkit-meter-bar {
 .nutrientlabel{
     font-size: 3em;
     display: inline-block;
+    margin-top: 1.5em;
+    margin-left: 1em;
+}
+.nutrientlabelg{
+    font-size: 3em;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+#TN{
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-left: 7em;
+    text-align: center;
+}
+#bf{
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    text-align: center;
+}
+#lunch{
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-left: 8.7em;
+    text-align: center;
 }
 .nutrientinput{
     font-size: 2em;
     width: 3em;
     direction: rtl;
     display: inline-block;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    border: black;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .eat{
@@ -124,14 +158,39 @@ meter::-webkit-meter-bar {
 .graphlabels{
     font-size: 5em;
 }
+.formlabel{
+    font-size: 3em;
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.formg{
+    font-size: 3em;
+    display: inline-block;
+    margin-top: 1em;
+    
+}
+.forminput{
+    font-size: 2em;
+    width: 3em;
+    direction: rtl;
+    display: inline-block;
+    margin-top: 1em;
+    
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+}
 .form-container{
     background-color: #86C8BC;
     color: #150c6d;
+    
+    
     padding: 3em;
     border: none;
     cursor: pointer;
     width: 90%;
-    height: 50em;
+    height: 58.5em;
     margin-bottom:9px;
     opacity: 0.8;
     overflow-y: scroll;
@@ -157,11 +216,13 @@ meter::-webkit-meter-bar {
     width: 8em;
 }
 .open-button2{
+    
     background-color: #719fd1;
     color: #150c6d;
     padding: .5em;
     font-size: 2em;
-    margin: .5em;
+    margin-top: 8em;
+    margin-left: 18em;
     border: none;
     cursor: pointer;
     opacity: 0.8;

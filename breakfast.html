@@ -17,73 +17,35 @@
                     <h1 class = "nutritiontitle">Nutrition</h1>
                     
                 </div>
+                <div>
+                    <label  id = "bf">Breakfast</label><br>
+                </div>
                 
-                <!-- <div class = "form-popup" id = "form"> -->
-                    <!-- <form action = "/action_page.php" class = "form-container">
-
-                        <label class = "nutrientlabel" id = "bf">Breakfast</label><br>
-
-                        <label class = "nutrientlabel" id = "calorylabel">Calories: &nbsp</label>
-                        <input class = "nutrientinput" type="number"  id="caloryintake" min = "0" max = "9999" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" ><br><br>
-
-                        <label class = "nutrientlabel" id = "totalfatlabel">Total Fat: </label>
-                        <label class = "nutrientlabel" id = "totalfatnum"></label><br>
-                        <label class = "nutrientlabel" id = "satfatlabel">&emsp;&emsp;Saturated Fat: &nbsp</label>
-                        <input class = "nutrientinput" type="number" id="satfatintake" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br>
-                        <label class = "nutrientlabel" id = "transfatlabel">&emsp;&emsp;Trans Fat: &nbsp</label>
-                        <input class = "nutrientinput" type="number" id="transfatintake" 
-                        oninput="digitLimit()" maxlength = "4"><br><br>
-
-                        <label class = "nutrientlabel">Cholesterol:</label>
-                        <input class = "nutrientinput" type="number" id="cholesterolinput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br><br>
-                        <label class = "nutrientlabel">Sodium:</label>
-                        <input class = "nutrientinput" type="number" id="sodiuminput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br><br>
-                        <label class = "nutrientlabel">Total Carbohydrates: </label>
-                        <input class = "nutrientinput" type="number" id="carbinput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br>
-                        <label class = "nutrientlabel">&emsp;&emsp;Dietary Fiber: </label>
-                        <input class = "nutrientinput" type="number" id="fiberinput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br>
-                        <label class = "nutrientlabel">&emsp;&emsp;Total sugar: </label>
-                        <input class = "nutrientinput" type="number" id="totalsugarinput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br>
-                        <label class = "nutrientlabel">&emsp;&emsp;included added sugar:</label>
-                        <input class = "nutrientinput" type="number" id="addedsugarinput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br><br>
-                        <label class = "nutrientlabel">protein:</label>
-                        <input class = "nutrientinput" type="number" id="proteininput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br><br>
-
-                        <button class = "open-button2" type = "button" onclick="closeForm();reset();">submit</button>
-                    </form> -->
-                <!-- </div> -->
-                <label class = "nutrientlabel" id = "bf">Breakfast</label><br>
                 <div class = "inputdisplay">
-                    <label class = "nutrientlabel" id = "calorylabel">Calories: </label>
-                    <input class = "nutrientinput" type="number"  id="caloryintake" min = "0" max = "9999" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" ><br>
+                    <label class = "nutrientlabel" >Calories: </label>
+                    <input class = "nutrientinput" type="number"  id="bfcalories" min = "0" max = "9999" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" ><br>
                     
-                    <label class = "nutrientlabel" id = "totalfatlabel">Total Fat: </label>
-                        <input class = "nutrientinput" type="number" id="satfatintake" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br>
-                    
+                    <label class = "nutrientlabel" >Total Fat: </label>
+                        <input class = "nutrientinput" type="number" id="bffat"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" >
+                    <label class = "nutrientlabelg" >g</label><br>
                     <label class = "nutrientlabel">Total Carbohydrates: </label>
-                    <input class = "nutrientinput" type="number" id="carbinput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br>
-                    
+                    <input class = "nutrientinput" type="number" id="bfcarb" 
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
+                    <label class = "nutrientlabelg" >g</label><br>
                     <label class = "nutrientlabel">protein:</label>
-                    <input class = "nutrientinput" type="number" id="proteininput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br>
-                    
+                    <input class = "nutrientinput" type="number" id="bfprotein" 
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
+                    <label class = "nutrientlabelg" >g</label><br>
                     <label class = "nutrientlabel">water Intake:</label>
-                    <input class = "nutrientinput" type="number" id="waterinput" 
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4"><br>
-                    <button class = "open-button2" type = "button" >submit</button>
+                    <input class = "nutrientinput" type="number" id="bfwaterintake" 
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
+                    <label class = "nutrientlabelg" >oz</label><br>
+                    <a href="nutrition.html"><button class = "open-button2" type = "button" onclick="addtoTotal();" >submit</button></a>
                 </div>
                     
                     
             
-                <meter min = '0' low = '0' high = '0' max = '100' value='20'></meter>
+                <!-- <meter min = '0' low = '0' high = '0' max = '100' value='20'></meter> -->
                     
             
                 <div class="navbar">
