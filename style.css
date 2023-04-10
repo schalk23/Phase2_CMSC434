@@ -350,12 +350,12 @@ div#quote {
 }
 .slidecontainer {
     width: 80%; /* Width of the outside container */
-    padding-left: 75px;
+    padding-left: 45px;
   }
 
   .slider {
     appearance: none;
-    width: 100%; /* Full-width */
+    width: 80%; /* Full-width */
     height: 15px; /* Specified height */
     background: #150c6d; /* Grey background */
     outline: none; /* Remove outline */
@@ -372,5 +372,3 @@ div#quote {
     background: #279d9d; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
-
-
