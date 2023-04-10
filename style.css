@@ -51,6 +51,8 @@ meter::-webkit-meter-bar {
     margin-top: 1.5em;	
     margin-left: 7em;	
     text-align: center;	
+    position: relative;
+
 }	
 #bf{	
     font-size: 3em;	
@@ -136,10 +138,10 @@ meter::-webkit-meter-bar {
     border: none;	
     cursor: pointer;	
     width: 90%;	
-    height: 58.5em;	
+    height: 45.5em;	
     margin-bottom:9px;	
     opacity: 0.8;	
-    overflow-y: scroll;	
+    /* overflow-y: scroll;	 */
 }	
 .form-popup {	
     display: none;	
