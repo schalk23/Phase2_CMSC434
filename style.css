@@ -48,6 +48,8 @@ meter::-webkit-meter-bar {
     margin-top: 1.5em;	
     margin-left: 7em;	
     text-align: center;	
+    position: relative;
+
 }	
 #bf{	
     font-size: 2em;	
@@ -134,7 +136,7 @@ meter::-webkit-meter-bar {
     height: 35em;	
     margin-bottom:9px;	
     opacity: 0.8;	
-    overflow-y: scroll;	
+    /* overflow-y: scroll;	 */
 }	
 .form-popup {	
     display: none;	
@@ -409,7 +411,7 @@ div#quote {
 /* alignment for home tab click text above tabs */
 #clicktabs {
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 /* Streak formatting */
@@ -490,7 +492,8 @@ div#quote {
 }
 
 /* Button to click to get to the survey for first time users */
-#firstTimeB {
+
+#firstTimeB, #logout {
     position: relative;
     left: 10rem;
 }

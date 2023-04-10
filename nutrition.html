@@ -10,7 +10,7 @@
 
     <body >
 
-        <div class="box" scroll="no" style="overflow: hidden">
+        <div class="box"> <!--  scroll="no" style="overflow: hidden"> -->
             <h1 class="logo">FLEX</h1>
                 <div class = "nutrition">
                     
@@ -35,7 +35,6 @@
                         <input class = "forminput" type="number" id="bffat" 
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
                         <label class = "formg" >g</label> <br>
-                        
                         <label class = "formlabel">Total Carbohydrates: </label>
                         <input class = "forminput" type="number" id="bfcarb" 
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
@@ -66,11 +65,10 @@
                     <label class = "nutrientlabel" id = "totalprotein">protein:</label>
                     <label class = "formg" id = "proteinnum">0</label> 
                     <label class = "formg" >g</label> <br>
-                    <label class = "nutrientlabel" id = "totalwaterintake"> Total Water Intake: </label>
+                    <label class = "nutrientlabel" id = "totalwaterintake"> (under dev) <br> Total Water Intake: </label>
                     <label class = "formg" id = "waternum">0</label> 
                     <label class = "formg">liters</label> 
                 <meter min = '0' low = '0' high = '0' max = '1000' value='0' id = "watermeter"></meter>
-                    
             
                 <div class="navbar">
                   <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
@@ -78,7 +76,7 @@
                   <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
                   <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
                   <a class="icons" href="nutrition.html"><img src="Images/calories_icon.png"></a>
-                  <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a>
+                  <a class="icons" href="graph.html"><img src="Images/data_viz.png"></a>
                 </div>
                 
         </div>
