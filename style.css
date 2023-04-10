@@ -155,7 +155,7 @@ p{
     display: inline-block;
     transition: background-color 0.6s ease;
     position: relative;
-    bottom: 52rem;
+    bottom: 43rem;
   }
 
     /* Up Arrow for Stretch tab home page */
@@ -220,7 +220,7 @@ div#quote {
 /* alignment for home tab click text above tabs */
 #clicktabs {
     text-align: center;
-    font-size: 14px;
+    font-size: 25px;
 }
 
 /* Streak formatting */

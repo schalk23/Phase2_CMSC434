@@ -4,9 +4,6 @@
     <link rel="stylesheet" href="style.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
-    <script type='text/javascript' > 
-      let DayOfWeek = 'Monday';
-    </script>
     <script type="text/javascript" src="stretching.js"></script>
     <title>Stretch</title>
   </head>
@@ -14,8 +11,13 @@
     <div class="box">
       <h1 class="logo">FLEX</h1>
       <h1 class="title">Stretch</h1>
-      <h2 id="level">Beginner</h2>
-      <div id="numberOf">1</div><div id="next">stretch until next level!</div>
+      <select id="level" style="height: 100px; font-size: 30px; width: 100%; align-items:center; display: flex; justify-content: center; text-align: center;">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+      <br>
+      <div id="numberOf">1</div><div id="next">stretch until next level! (under dev)</div>
 
       <h2>Stretches of the Day</h2>
       <img id="SOTD" src="./stretch_images/clickAny.png" height="300" width="300" />
