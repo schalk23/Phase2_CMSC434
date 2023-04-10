@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="stylesheet" href="style.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="homing.js"></script>
+    <script type="text/javascript" src="stretching.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="logo">FLEX</h1>
+      <!-- <h1> Home </h1> -->
+      <h1> Welcome Back, Sofia! </h1>
+      
+      <!-- <h2 id="level">Beginner</h2> -->
+      <select id="level" style="height: 100px; font-size: 30px; width: 100%; align-items:center; display: flex; justify-content: center; text-align: center;">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+      <br>
+      <div id="clicktabs">Click the Name of the Page You Would like to Navigate to Below</div>
 
-</head>
-<body>
-    
-<div class="box">
-    <h1 class="logo">FLEX</h1>    
-    <h1 class="title">Home</h1>
+        <div class="grid-container1">
+          <a href="./stretch.html">
+            <div class="grid-item1">Stretch</div>
+          </a>
+          <a href="./nutrition.html">
+            <div class="grid-item2">Food</div>
+          </a>
+          <a href="./health.html">
+            <div class="grid-item3">Literacy</div>
+          </a>
+          <a href="./mood.html">
+            <div class="grid-item4">Mood</div>
+          </a>
+          <a href="./graph.html">
+            <div class="grid-item5">Data Visualization</div>
+          </a>
+        </div>
+        <a href="./survey.html"><button id="firstTimeB"> First Time Users Click Here </button></a>
+        <br>
 
-    <div class="navbar">
-      <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
-      <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
-      <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
-      <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
-      <a class="icons" href="intake.html"><img src="Images/calories_icon.png"></a>
-      <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a>
+        <h2> Quote of the Day </h2>
+        <div id="quote"> “When we do the best we can, we never know what miracle is wrought in our life or the life of another.” – Helen Keller </div>
+        <!-- Use some innerHTML - Linked in JS -->
+        <br>
+
+        <h2> Current Streak </h2>
+        <div class="grid-container2">
+          <div class="grid-item6">Mon</div>
+          <div class="grid-item6">Tues</div>
+          <div class="grid-item6">Wed</div>
+          <div class="grid-item6">Thurs</div>
+          <div class="grid-item6">Fri</div>
+          <div class="grid-item6">Sat</div>
+          <div class="grid-item6">Sun</div>
+          
+          <div id = "MonStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
+          <div id = "TueStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
+          <div id = "WedStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
+          <div id = "ThrStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
+          <div id = "FriStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
+          <div id = "SatStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
+          <div id = "SunStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
+        </div>
     </div>
-
-</div>
-    
-</body>
+  </body>
 </html>
+
+<!-- <a href="https://www.flaticon.com/free-icons/fire" title="fire icons">Fire icons created by manshagraphics - Flaticon</a> -->

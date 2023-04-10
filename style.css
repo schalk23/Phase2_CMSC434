@@ -195,11 +195,12 @@ html {
     font-size: 25px;
 }
 
-/* Heading 1 specifications */
-h1 {
-    color: #150c6d;
-    font-family: 'Roboto';
-    font-size: 40;
+h1{
+    text-align:center;
+    margin:none;
+    padding: none;
+    color:#150c6d;
+    font-size: 40px;
     text-align: center;
     margin:none;
     padding: none;
@@ -245,7 +246,6 @@ button{
   text-align: center;
 }
 
-/* Body text specifications */
 p{
     color: #000000;
     font-family: 'Roboto';
@@ -254,7 +254,198 @@ p{
 .smalltext{
     color: #000000;
     font-family: 'Roboto';
-    font-size: 12px;
+    font-size: 12pxpx;
+}
+
+/* 'Arms' text on stretching home tab */
+#ArmsText {
+    position: relative;
+    right: 15px;
+}
+/* 'Legs' text on stretching home tab */
+#LegsText {
+    position: relative;
+    
+}
+/* 'Abs' text on stretching home tab */
+#AbsText {
+    position: relative;
+    left: 20px;
+    
+}
+/* 'Back' text on stretching home tab */
+#BackText {
+    position: relative;
+    
+}
+/* Clickable arms pic on stretching home tab */
+#ArmsPic {
+    border: 4px solid #86C8BC;
+    background-color: white;
+
+}
+/* Clickable back pic on stretching home tab */
+#BackPic {
+    border: 4px solid  #86C8BC;
+    background-color: white;
+}
+/* Clickable abs pic on stretching home tab */
+#AbsPic {
+    border: 4px solid  #86C8BC;
+    background-color: white;
+}
+
+/* Clickable legs pic on stretching home tab */
+#LegsPic {
+    border: 4px solid  #86C8BC;
+    background-color: white;
+
+}
+
+#SOTD {
+    display: block;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    bottom: 6rem;
+    border: 4px solid #86C8BC
+}
+
+/* text for more stretches text on stretching home tab */
+#More_Stretches1 {
+    position: relative;
+    top: 2rem;
+}
+
+/* entire grid item for stretching home tab */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+/* + grid item on stretching home tab */
+.grid-itemA, .grid-itemB, .grid-itemC, .grid-itemD, .grid-itemE, .grid-itemF, .grid-itemG, .grid-itemH, .grid-itemI{
+    text-align: center;
+    
+}
+
+/* Text for swipe above on stretch home tab */
+#swipeAbove {
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+    font-size: 25px;
+}
+
+/* The dots/bullets/indicators below SOTD */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    bottom: 47rem;
+  }
+
+    /* Up Arrow for Stretch tab home page */
+  #arrowUp {
+    transform: rotate(270deg);
+    display: block;
+    position: relative;
+    left: 5rem;
+ 
+  }
+  /* Down Arrow for Stretch tab home page */
+  #arrowDown {
+    transform: rotate(90deg);
+    display: block;
+    text-align: center;
+    position: relative;
+    left: 5rem;
+  }
+
+   /* Left Arrow for Stretch tab home page */
+  #arrowLeft {
+    transform: rotate(180deg);
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+  }
+
+  /* Right Arrow for Stretch tab home page */
+  #arrowRight {
+    text-align: center;
+    position: relative;
+    bottom: 3rem;
+  }
+
+  /* 5 tabs to select on home page */
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+/* Each tab itself on the home page */
+.grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5  {
+    background-color: #86C8BC;
+    border: 2px solid #279d9d;
+    color: #000000;
+    max-width: auto;
+    height: 7rem;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+/* Quote of the day on the home page */
+div#quote {
+    text-align: center;
+    max-height: 10rem;
+    font-size: 30px;
+}
+
+/* alignment for home tab click text above tabs */
+#clicktabs {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Streak formatting */
+#MonStreak, #TueStreak, #WedStreak, #ThrStreak, #FriStreak, #SatStreak, #SunStreak {
+    display: inline;
+}
+
+/* This will center align the div containing the streak on home page*/
+#streakControl {
+    text-align: center;
+}
+
+/* Grid for the Days of the week on the home page */
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+/* individual DOW grid items for M-Sun */
+.grid-item6 {
+    text-align: center;
+    max-width: 4px;
+    position: relative;
+    left: 10px;
+}
+
+/* Formatting for the level on the home/stretching page */
+#level {
+    font-style: italic;
 }
 
 .button:hover {opacity: 1}
@@ -304,6 +495,27 @@ p{
     margin: 5px 60px;
     padding: 0px;
 }
+
+/* Button to click to get to the survey for first time users */
+#firstTimeB {
+    position: relative;
+    left: 10rem;
+}
+
+#numberOf {
+    display: inline;
+    position: relative;
+    left: 300px;
+    font-weight: bold;
+    color:#f4511e
+}
+
+#next {
+    display: inline;
+    position: relative;
+    left: 360px;
+}
+
 
 .textinput{
     display:inline-block;
