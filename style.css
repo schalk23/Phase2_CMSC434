@@ -526,7 +526,7 @@ div#quote {
 
   .slider {
     appearance: none;
-    width: 100%; /* Full-width */
+    width: 80%; /* Full-width */
     height: 15px; /* Specified height */
     background: #150c6d; /* Grey background */
     outline: none; /* Remove outline */
