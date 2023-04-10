@@ -5,9 +5,9 @@
     display: inline-block;	
 } */	
 meter{	
-    margin-left: 2em;	
-    width: 35em;	
-    height: 15em;	
+    margin-left: 2rem;	
+    width: 35rem;	
+    height: 15rem;	
     	
 }	
 meter::-webkit-meter-bar {	
@@ -33,41 +33,41 @@ meter::-webkit-meter-bar {
     background-size: 100% 100%;	
   }	
 .nutrientlabel{	
-    font-size: 2em;	
+    font-size: 2rem;	
     display: inline-block;	
-    margin-top: 1.5em;	
-    margin-left: 1em;	
+    margin-top: 1.5rem;	
+    margin-left: 1rem;	
 }	
 .nutrientlabelg{	
-    font-size: 2em;	
+    font-size: 2rem;	
     display: inline-block;	
-    margin-top: 1.5em;	
+    margin-top: 1.5rem;	
 }	
 #TN{	
-    font-size: 2em;	
-    margin-top: 1.5em;	
-    margin-left: 7em;	
+    font-size: 2rem;	
+    margin-top: 1.5rem;	
+    margin-left: 7rem;	
     text-align: center;	
 }	
 #bf{	
-    font-size: 2em;	
-    margin-top: 1.5em;	
-    margin-left: 1em;	
+    font-size: 2rem;	
+    margin-top: 1.5rem;	
+    margin-left: 1rem;	
     text-align: center;	
 }	
 #lunch{	
-    font-size: 3em;	
-    margin-top: 1.5em;	
-    margin-left: 8.7em;	
+    font-size: 3rem;	
+    margin-top: 1.5rem;	
+    margin-left: 8.7rem;	
     text-align: center;	
 }	
 .nutrientinput{	
-    font-size: 2em;	
-    width: 3em;	
+    font-size: 2rem;	
+    width: 3rem;	
     direction: rtl;	
     display: inline-block;	
-    margin-top: 1.5em;	
-    margin-left: 1em;	
+    margin-top: 1.5rem;	
+    margin-left: 1rem;	
     border: black;	
     border-width: 2px;	
     border-style: solid;	
@@ -78,11 +78,11 @@ meter::-webkit-meter-bar {
     margin: .5em 1em;	
 }	
 .nutritiontitle{	
-    font-size: 3em;	
+    font-size: 3rem;	
     text-align: center;	
 }	
 .graphtitle{	
-    font-size: 3em;	
+    font-size: 3rem;	
     text-align: center;	
 }	
 .icons{	
@@ -93,32 +93,32 @@ meter::-webkit-meter-bar {
 }	
 .radiobutton{	
     border: 0px;	
-    width: 5em;	
-    height: 2em;	
-    margin-left: 2em;	
+    width: 5rem;	
+    height: 2rem;	
+    margin-left: 2rem;	
 }	
 .graphlabels{	
-    font-size: 2em;	
+    font-size: 2rem;	
     	
 }	
 .formlabel{	
-    font-size: 2em;	
+    font-size: 2rem;	
     display: inline-block;	
-    margin-top: 1em;	
-    margin-left: 1em;	
+    margin-top: 1rem;	
+    margin-left: 1rem;	
 }	
 .formg{	
-    font-size: 2em;	
+    font-size: 2rem;	
     display: inline-block;	
-    margin-top: 1em;	
+    margin-top: 1rem;	
     	
 }	
 .forminput{	
-    font-size: 1em;	
-    width: 3em;	
+    font-size: 1rem;	
+    width: 3rem;	
     direction: rtl;	
     display: inline-block;	
-    margin-top: 1em;	
+    margin-top: 1rem;	
     	
     border: black;	
     border-width: 2px;	
@@ -127,18 +127,18 @@ meter::-webkit-meter-bar {
 .form-container{	
     background-color: #86C8BC;	
     color: #150c6d;	
-    padding: 3em;	
+    padding: 3rem;	
     border: none;	
     cursor: pointer;	
     width: 85%;	
-    height: 35em;	
+    height: 35rem;	
     margin-bottom:9px;	
     opacity: 0.8;	
     overflow-y: scroll;	
 }	
 .form-popup {	
     display: none;	
-    margin: 1em;	
+    margin: 1rem;	
 }	
 .form-container .btn:hover, .open-button:hover {	
     opacity: 1;	
@@ -146,26 +146,26 @@ meter::-webkit-meter-bar {
 .open-button {	
     background-color: #86C8BC;	
     color: #150c6d;	
-    padding: .5em;	
-    font-size: 1em;	
-    margin-left: 3.5em;	
+    padding: .5rem;	
+    font-size: 1rem;	
+    margin-left: 3.5rem;	
     border: none;	
     cursor: pointer;	
     opacity: 0.8;	
-    width: 8em;	
+    width: 8rem;	
 }	
 .open-button2{	
     	
     background-color: #719fd1;	
     color: #150c6d;	
-    padding: .5em;	
-    font-size: 1.5em;	
-    margin-top: 4em;	
-    margin-left: 12em;	
+    padding: .5rem;	
+    font-size: 1.5rem;	
+    margin-top: 4rem;	
+    margin-left: 12rem;	
     border: none;	
     cursor: pointer;	
     opacity: 0.8;	
-    width: 8em;	
+    width: 8rem;	
 }
 .box{
     align-self: center;
