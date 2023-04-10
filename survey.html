@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,21 +14,76 @@
     
 <div class="box">
 <h1 class="logo">FLEX</h1>    
-<h1 class="title">First Time User Survey</h1>
+
+<form>
+  <fieldset >
+  <legend STYLE = "color:#279d9d; text-align: center; font-size: 55px; ">First Time User Survey</legend>
+  <p  STYLE = " text-align: center; font-size: 35px;" > Let's get to know you better to tailor the app to your needs</p>
+  <h3 > Basic Info </h3>
+   <p STYLE = " font-size: 38px;  color: #296a5e;">
+       First name: <input type = "text" name = "fname"  size="45px" class = "textinput"/>
+</p>
+ <p STYLE = " font-size: 38px; color: #296a5e;">
+       Last name: <input type = "text" name = "lname"  size="45px" class = "textinput" />
+</p>
+<p STYLE = " font-size: 38px; color: #296a5e;">
+  Age: <input type = "text" name = "age" size="45px" class = "textinput" />
+</p>
+
+<p>
+  <h3>Fitness Level </h3>
+  <input type = "radio" name = "Fitness Level" style="height:35px; width:35px;" value = "Beginner"> <span style="font-size: 40px;">Beginner&nbsp&nbsp</span>
+  <input type = "radio" name = "Fitness Level" style="height:35px; width:35px;" value = "Intermediate">  <span style="font-size: 40px;">Intermediate&nbsp&nbsp</span>
+  <input type = "radio" name = "Fitness Level" style="height:35px; width:35px;" value = "Advanced">  <span style="font-size: 40px;">Advanced</span>
+  <br>
+ 
+<p >
+  <h3>Goals </h3>
+<span style="font-size: 40px;">Water Intake Goal: </span> <input type = "range" id = "water" min="8" max="16" style= " width:300px"/> <span id="waterOz"> </span>
+<p id="waterhelp" onMouseover="waterHelp()" class = "smalltext" STYLE = " font-style: italic;">HELP</p>
+
+<span style="font-size: 40px;"> Daily Caloric Goal: </span> <input type = "range" id = "calories" style= " width:300px"  min="1200" step="100" max="4000"/> <span id="cals"> </span>
+
+ <p id="calshelp" onMouseover="calsHelp()" class = "smalltext" STYLE = " font-style: italic;">HELP</p>
+<p>
+    <input type = "submit" name = "submit" value = "Submit" style="font-size: 40px;" />
+  </p>
+</fieldset>
+</form>
 
 <div class="navbar">
-  <a class="active" a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a> 
-  <a href="stretch.html"><i class="fa fa-odnoklassniki"></i> Stretch</a> 
-  <a href="health.html"><i class="fa fa-heartbeat" aria-hidden="true"></i> Literacy</a>
-  <a href="mood.html"><i class="fa fa-book"></i> Mood</a>
-  <a href="intake.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Intake</a>
-  <a href="profile.html"><i class="fa fa-fw fa-user"></i> Profile</a>
-  <a href="survey.html"><i class="fa fa-sticky-note"></i> Survey</a>
-    
+  <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
+  <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
+  <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
+  <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
+  <a class="icons" href="intake.html"><img src="Images/calories_icon.png"></a>
+  <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a>
 </div>
     
 </div>
 
 
 </body>
+<script>
+  function waterHelp(){
+      document.getElementById("waterhelp").innerHTML = "Recommended water daily water intake is 9 and 13 cups for women and men respectively"
+  }
+  function calsHelp(){
+      document.getElementById("calshelp").innerHTML = "Recommended caloric daily water intake range is 1200-2400 and 2000-3000 for women and men respectively"
+  }
+ 
+  var waterslider = document.getElementById("water");
+  var wateroutput = document.getElementById("waterOz");
+  waterslider.onchange = function() {
+    wateroutput.innerHTML = this.value + " oz";
+  }
+
+  var calsslider = document.getElementById("calories");
+  var calsoutput = document.getElementById("cals")
+  calsslider.onchange = function() {
+    calsoutput.innerHTML = this.value + " cals";
+  }
+
+
+</script>
 </html>

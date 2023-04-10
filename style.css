@@ -1,3 +1,4 @@
+
  .box{
     align-self: center;
     width: 100%;
@@ -41,6 +42,21 @@ h2 {
     font-size: 38px;
 }
 
+h3 {
+
+    font-family: 'Roboto';
+    padding: none;
+    color:#150c6d;
+    font-size: 45px;
+}
+h4 {
+
+    font-family: 'Roboto';
+    padding: none;
+    color: #296a5e;
+    font-size: 25px;
+}
+
 button{
   background-color: #f4511e;
   border: none;
@@ -58,7 +74,12 @@ button{
 p{
     color: #000000;
     font-family: 'Roboto';
-    font-size: 25px;
+    font-size: 35px;
+}
+.smalltext{
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 12pxpx;
 }
 
 /* 'Arms' text on stretching home tab */
@@ -319,4 +340,37 @@ div#quote {
     position: relative;
     left: 360px;
 }
+
+
+.textinput{
+    display:inline-block;
+    padding:15px 10px;
+    line-height:140%;
+    
+}
+.slidecontainer {
+    width: 80%; /* Width of the outside container */
+    padding-left: 75px;
+  }
+
+  .slider {
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 15px; /* Specified height */
+    background: #150c6d; /* Grey background */
+    outline: none; /* Remove outline */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* The slider handle*/
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #279d9d; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
 
