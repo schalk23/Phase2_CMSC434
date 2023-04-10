@@ -16,6 +16,11 @@ function moodCheckIn() {
     // save the data 
     intensityData.push(intensity);
     moodData.push(mood);   
+    if (mood == '') {
+        alert("complete your mood check in before submitting! ")
+    } else {
+        alert("Thanks for checking in! See you tommorow!");
+    }
     alert("Thanks for checking in! See you tommorow!");
     document.getElementById('mood').innerHTML="";
     document.getElementById("intensity").innerHTML ="";  
