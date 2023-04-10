@@ -1,26 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="stylesheet" href="style.css" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-<div class="box">
-<h1 class="logo">FLEX</h1>    
-<h1 class="title">Stretch</h1>
-    
-  <div class="navbar">
-      <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
-      <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
-      <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
-      <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
-      <a class="icons" href="intake.html"><img src="Images/calories_icon.png"></a>
-      <a class="icons" href="profile.html"><img src="Images/profile_icon.png"></a>
+    <script type="text/javascript" src="stretching.js"></script>
+    <title>Stretch</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="logo">FLEX</h1>
+      <h1 class="title">Stretch</h1>
+      <select id="level" style="height: 100px; font-size: 30px; width: 100%; align-items:center; display: flex; justify-content: center; text-align: center;">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+      <br>
+      <div id="numberOf">1</div><div id="next">stretch until next level! (under dev)</div>
+
+      <h2>Stretches of the Day</h2>
+      <img id="SOTD" src="./stretch_images/clickAny.png" height="300" width="300" />
+      <div id="swipeAbove">
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        Click Dots for Stretches of the Day
+      </div>
+      <div class="grid-container">
+        <div class="grid-itemA"></div>
+        <div class="grid-itemB" onclick="clickLegs()">
+          <p id="LegsText">Legs</p>
+          <img
+            id="LegsPic"
+            src="./stretch_images/leg.png"
+            height="165"
+            width="165"
+          />
+          <img
+            id="arrowUp"
+            src="./stretch_images/right-arrow.png"
+            height="45"
+            width="45"
+          />
+        </div>
+        <div class="grid-itemC"></div>
+        <div class="grid-itemD" onclick="clickArms()">
+          <img
+            id="ArmsPic"
+            src="./stretch_images/arm.png"
+            height="165"
+            width="165"
+          />
+          <img
+            id="arrowLeft"
+            src="./stretch_images/right-arrow.png"
+            height="45"
+            width="45"
+          />
+          <p id="ArmsText">Arms</p>
+        </div>
+        <div class="grid-itemE">
+          <h2 id="More_Stretches1">More</h2>
+          <h2 id="More_Stretches1">Stretches</h2>
+        </div>
+        <div class="grid-itemF" onclick="clickAbs()">
+          <img
+            id="arrowRight"
+            src="./stretch_images/right-arrow.png"
+            height="45"
+            width="45"
+          />
+          <img
+            id="AbsPic"
+            src="./stretch_images/abs.png"
+            height="165"
+            width="165"
+          />
+          <p id="AbsText">Abs</p>
+        </div>
+        <div class="grid-itemG"></div>
+        <div class="grid-itemH" onclick="clickBack()">
+          <img
+            id="arrowDown"
+            src="./stretch_images/right-arrow.png"
+            height="45"
+            width="45"
+          />
+          <img
+            id="BackPic"
+            src="./stretch_images/back.png"
+            height="165"
+            width="165"
+          />
+          <p id="BackText">Back</p>
+        </div>
+        <div class="grid-itemI"></div>
+      </div>
+      <br><br>
+
+      <div class="navbar">
+        <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
+        <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
+        <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
+        <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
+        <a class="icons" href="nutrition.html"><img src="Images/calories_icon.png"></a>
+        <a class="icons" href="graph.html"><img src="Images/data_viz.png"></a>
+      </div>
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </div>
-    
-</div>
+
+    <!-- <a href="https://www.flaticon.com/free-icons/leg" title="leg icons">Leg icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/strenght" title="strenght icons">Strenght icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/back" title="back icons">Back icons created by Good Ware - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/muscle" title="muscle icons">Muscle icons created by Good Ware - Flaticon</a> -->
+    <!-- <a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Roundicons - Flaticon</a> -->
+  </body>
+</html>
 
 
 </body>

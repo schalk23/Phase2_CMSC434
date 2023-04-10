@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <div class="box">
+            <h1 class="logo">FLEX</h1>
+                <div class = "nutrition">
+                    
+                    <h1 class = "nutritiontitle">Nutrition</h1>
+                    
+                </div>
+                <div>
+                    <label  id = "bf">Breakfast</label><br>
+                </div>
+                
+                <div class = "inputdisplay">
+                    <label class = "nutrientlabel" >Calories: </label>
+                    <input class = "nutrientinput" type="number"  id="bfcalories" min = "0" max = "9999" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" ><br>
+                    
+                    <label class = "nutrientlabel" >Total Fat: </label>
+                        <input class = "nutrientinput" type="number" id="bffat"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4" >
+                    <label class = "nutrientlabelg" >g</label><br>
+                    <label class = "nutrientlabel">Total Carbohydrates: </label>
+                    <input class = "nutrientinput" type="number" id="bfcarb" 
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
+                    <label class = "nutrientlabelg" >g</label><br>
+                    <label class = "nutrientlabel">protein:</label>
+                    <input class = "nutrientinput" type="number" id="bfprotein" 
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
+                    <label class = "nutrientlabelg" >g</label><br>
+                    <label class = "nutrientlabel">water Intake:</label>
+                    <input class = "nutrientinput" type="number" id="bfwaterintake" 
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
+                    <label class = "nutrientlabelg" >oz</label><br>
+                    <a href="nutrition.html"><button class = "open-button2" type = "button" onclick="addtoTotal();" >submit</button></a>
+                </div>
+                    
+                    
+            
+                <!-- <meter min = '0' low = '0' high = '0' max = '100' value='20'></meter> -->
+                    
+            
+                <div class="navbar">
+                  <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
+                  <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
+                  <a class="icons" href="health.html" style="margin-top:-20px;margin-left:20px;"><img src="Images/health_icon.png"></a>
+                  <a class="icons" href="mood.html" style="margin-left:60px;"><img src="Images/diary_icon.png"></a>
+                  <a class="icons" href="nutrition.html"><img src="Images/calories_icon.png"></a>
+                  <a class="icons" href="graph.html"><img src="Images/data_viz.png"></a>
+                </div>
+                
+        </div>
+        <!-- <div >
+            <div class="box">
+                <h1 class="logo">FLEX</h1>    
+            </div>
+            
+            <div class = "nutrition">
+                <div>
+                    <h1 class = "nutritiontitle">Nutrition</h1>
+                </div>
+            </div>
+            <div>
+                <button class = "open-button" type="button" onclick="openForm()">breakfast</button>
+                <button class = "open-button" type="button" onclick="openForm()">lunch</button>
+                <button class = "open-button" type="button" onclick="openForm()">dinner</button>
+            </div>
+            <div class = "form-popup" id = "form">
+                <form action = "/action_page.php" class = "form-container">
+                    <label class = "nutrientlabel">Calories</label>
+                    <input class = "nutrientinput" type="number" id="calories" size="100"><br><br>
+                    <label class = "nutrientlabel">Calories</label>
+                    <input class = "nutrientinput" type="number" id="calories" size="100"><br><br>
+                    <button class = "submit" type = "button" onclick="closeForm()">submit</button>
+                </form>
+            </div>
+            
+            <meter min = '0' low = '20' high = '50' max = '100' optimum='60' value='40'></meter>
+        
+        
+        </div> -->
+        <script src = "nutritionScript.js"></script>
+    </body>
+</html>
