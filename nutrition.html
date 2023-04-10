@@ -50,7 +50,7 @@
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "4">
                         <label class = "formg" >oz</label> <br>
 
-                        <button class = "open-button2" type = "button" onclick="addtoTotal();reset();closeForm();">submit</button>
+                        <button class = "open-button2" type = "button" onclick="addtoTotal();reset();closeForm();">add to total</button>
                     </form> 
                 </div>
                 <label  id = "TN">Total Nutrition</label><br>
@@ -68,7 +68,7 @@
                     <label class = "formg" >g</label> <br>
                     <label class = "nutrientlabel" id = "totalwaterintake"> Total Water Intake: </label>
                     <label class = "formg" id = "waternum">0</label> 
-                    <label class = "formg">oz</label> 
+                    <label class = "formg">liters</label> 
                 <meter min = '0' low = '0' high = '0' max = '1000' value='0' id = "watermeter"></meter>
                     
             
@@ -111,6 +111,6 @@
         
         
         </div> -->
-        <script src = "nutritionScript.js"></script>
+        <script src = "nutritionScript.js" ></script>
     </body>
 </html>

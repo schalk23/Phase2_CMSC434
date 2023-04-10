@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="style.css"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>
         <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
         
     </head>
 
@@ -11,22 +12,22 @@
         <div >
             <div class="box">
                 <h1 class="logo">FLEX</h1>    
-            </div>
-            
-            
+
                 <div>
                     <h1 class = "graphtitle">graph</h1>
                 </div>
                 <div>
-                    <input class = "radiobutton" type="radio" id="graph1">
-                    <label class = "graphlabels" for="graph1">graph1</label><br>
-                    <input class = "radiobutton" type="radio" id="graph2">
-                    <label class = "graphlabels" for="graph2">graph2</label><br>
-                    <input class = "radiobutton" type="radio" id="graph3">
-                    <label class = "graphlabels" for="graph3">graph3</label><br>
+                    
+                    <input class = "radiobutton" type="radio" name="graphanswer" id="graph1" onclick="linegraph()">
+                    <label class = "graphlabels" for="graph1">line graph &#9;</label>
+                    <input class = "radiobutton" type="radio" name="graphanswer"  id="graph2">
+                    <label class = "graphlabels" for="graph2">bar graph &#9;</label>
+                    <input class = "radiobutton" type="radio" name="graphanswer"  id="graph3">
+                    <label class = "graphlabels" for="graph3">pie graph &#9;</label>
                 </div>
-            
-        
+                <canvas id="myChart" style="width:100%;height: 100%;"></canvas>
+
+            </div>
             <div class="navbar">
               <a class="icons" href="home.html" style="margin-top:-14px;"><img src="Images/home.png"></a> 
               <a class="icons" href="stretch.html" style="margin-left:70px;"><img src="Images/stretch_icon.png"></a> 
@@ -37,5 +38,6 @@
             </div>
         
         </div>
+        <script src = "nutritionScript.js" ></script>
     </body>
 </html>

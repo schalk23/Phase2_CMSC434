@@ -1,3 +1,4 @@
+
 var totalCal = 0;
 var totalFat = 0;
 var totalCarb = 0;
@@ -5,6 +6,46 @@ var totalProtein = 0;
 var totalWaterInTake = 0;
 var eat = false;
 
+var nutritionData = [
+    ["Day 1",2051,24,225,55,3.7],
+    ["Day 2",2122,20,250,49,3.7],
+    ["Day 3",1953,28,205,52,3.7],
+    ["Day 4",1907,32,200,42,3.7],
+    ["Day 5",2327,35,260,36,3.7],
+    ["Day 6",1649,31,120,20,3.7],
+    ["Day 7",1859,22,150,31,3.7]
+];
+var days = [1,2,3,4,5,6,7]
+var caloriesData = [2051,2122,1953,1907,2327,1649,1859,];
+
+    function linegraph(){
+        new Chart("myChart", {
+            animcationEnabled: true,
+            theme: "light2",
+            title:{
+                text: "Calories over 7 days"
+            },
+            type: "line",
+            data: {
+                labels: days,
+                datasets: [{
+                    fill: false,
+                    lineTension: 0,
+                    backgroundColor: "rgba(0,0,255,1.0)",
+                    borderColor: "rgba(0,0,255,0.1)",
+                    data: caloriesData
+                }]
+
+            },
+            options: {
+                legend: {display: false},
+                scales: {
+                    yAxes: [{ticks: {min: 6, max:16}}],
+                }
+            }
+
+        });
+    }
 
     function reset(){
         eat = false;
@@ -35,7 +76,7 @@ var eat = false;
     }
 
     function addtoTotal(){
-        
+       
 
         var bfcal = document.getElementById("bfcalories");
         var bffat = document.getElementById("bffat");

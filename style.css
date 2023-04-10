@@ -154,9 +154,11 @@ meter::-webkit-meter-bar {
     border: 0px;
     width: 5em;
     height: 2em;
+    margin-left: 2em;
 }
 .graphlabels{
-    font-size: 5em;
+    font-size: 3em;
+    
 }
 .formlabel{
     font-size: 3em;
