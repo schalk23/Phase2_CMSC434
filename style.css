@@ -418,7 +418,7 @@ div#quote {
 /* alignment for home tab click text above tabs */
 #clicktabs {
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 /* Streak formatting */
@@ -499,7 +499,8 @@ div#quote {
 }
 
 /* Button to click to get to the survey for first time users */
-#firstTimeB {
+
+#firstTimeB, #logout {
     position: relative;
     left: 10rem;
 }

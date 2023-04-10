@@ -6,12 +6,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
     <script type="text/javascript" src="homing.js"></script>
     <script type="text/javascript" src="stretching.js"></script>
+      <script>
+        window.onload = function() {
+            // Get the username from sessionStorage
+            var loggedInUsername = localStorage.getItem("username");
+
+            // Update the content of the loggedInUsername span element with the logged in username
+            document.getElementById("loggedInUsername").textContent = loggedInUsername;
+        };
+      </script>
   </head>
   <body>
     <div class="box">
       <h1 class="logo">FLEX</h1>
       <!-- <h1> Home </h1> -->
-      <h1> Welcome Back, Sofia! </h1>
+      <h1 id="welcomeMessage"> Welcome Back, <span id="loggedInUsername">John</span>! </h1>
       
       <!-- <h2 id="level">Beginner</h2> -->
       <select id="level" style="height: 100px; font-size: 30px; width: 100%; align-items:center; display: flex; justify-content: center; text-align: center;">
@@ -20,7 +29,7 @@
         <option value="Advanced">Advanced</option>
       </select>
       <br>
-      <div id="clicktabs">Click the Name of the Page You Would like to Navigate to Below</div>
+      <div id="clicktabs">Click on tabs or scroll down to see more</div>
 
         <div class="grid-container1">
           <a href="./stretch.html">
@@ -39,9 +48,9 @@
             <div class="grid-item5">Data Visualization (Graphs) </div>
           </a>
         </div>
+        <br/>
         <a href="./survey.html"><button id="firstTimeB"> First Time Users Click Here </button></a>
         <br>
-
         <h2> Quote of the Day </h2>
         <div id="quote"> “When we do the best we can, we never know what miracle is wrought in our life or the life of another.” – Helen Keller </div>
         <!-- Use some innerHTML - Linked in JS -->
@@ -65,6 +74,8 @@
           <div id = "SatStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
           <div id = "SunStreak"><img id="streak" src="./stretch_images/passionate.png" height=95px width="auto" ></div>
         </div>
+        <br/><br/>
+        <a href="index.html"><button id="logout" style="margin-left:130px;"> Log out </button></a>
     </div>
   </body>
 </html>
