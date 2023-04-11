@@ -1,13 +1,13 @@
-var firstname = "";
-var lastname = "";
-var level = ""; // beginner, intermediate, or advanced
-var calorieGoal = 0;
-var waterGoal = 0;
+window.firstname = "";
+window.lastname = "";
+window.level = ""; // beginner, intermediate, or advanced
+window.calorieGoal = 0;
+window.waterGoal = 0;
 
 function createUser() {
-    alert("new user created:");
+
     firstname = document.getElementById("fname").value;
-    lastname = document.getElementsById("lname").value;
+    lastname = document.getElementById("lname").value;
     
     level = document.getElementsByName("FitnessLevel");
     for(i = 0; i< level.length; i++){
@@ -17,6 +17,6 @@ function createUser() {
     }
     waterGoal =  document.getElementById("water").value;
     calorieGoal =  document.getElementById("calories").value;
-    alert("new user created:" + firstname + lastname+level+calorieGoal+waterGoal);
+    alert("Saved!");
 
 }
