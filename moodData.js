@@ -21,7 +21,7 @@ function moodCheckIn() {
     } else {
         alert("Thanks for checking in! See you tommorow!");
     }
-    alert("Thanks for checking in! See you tommorow!");
+    
     document.getElementById('mood').innerHTML="";
     document.getElementById("intensity").innerHTML ="";  
 
